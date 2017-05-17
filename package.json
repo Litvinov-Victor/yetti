@@ -1,0 +1,45 @@
+{
+  "name": "yetti",
+  "version": "1.0.0",
+  "description": "A customizable, responsive, gallery plugin for jQuery.",
+  "keywords": [
+    "jquery",
+    "gallery",
+    "responsive"
+  ],
+  "main": "yetti.min.js",
+  "scripts": {
+    "uglify": "uglifyjs yetti.js -c --comments -o yetti.min.js",
+    "lint:js": "eslint yetti.js"
+  },
+  "pre-commit": [
+    "lint:js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Litvinov-Victor/yetti.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Litvinov-Victor/yetti/issues"
+  },
+  "homepage": "https://github.com/Litvinov-Victor/yetti#readme",
+  "author": "Litvinov-Victor (https://github.com/Litvinov-Victor)",
+  "contributors": [
+    "vitaliyryazanov <vitaliy0332@gmail.com> (https://github.com/vitaliyryazanov)",
+    "yeger <rets.dima@gmail.com> (https://github.com/yeger)",
+    "Askarov-Alex <askarov.aleksandr@gmail.com> (https://github.com/Askarov-Alex)",
+    "Litvinov-Victor <nikki.solution@gmail.com> (https://github.com/Litvinov-Victor)",
+    "ShamilEx <shamil9227@gmail.com> (https://github.com/ShamilEx)",
+    "Amirkhanov <nikelamigo@gmail.com> (https://github.com/Amirkhanov)"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.0",
+    "csso": "^3.1.1",
+    "eslint": "^3.19.0",
+    "husky": "^0.13.3",
+    "jscs": "^3.0.7",
+    "stylelint": "^7.10.1",
+    "uglify-js": "^3.0.6"
+  }
+}
